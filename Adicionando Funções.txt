@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+
+int soma(int a, int b)
+{
+    return a + b;
+}
+
+int subtracao(int a, int b)
+{
+    return a - b;
+}
+
+int multiplicacao(int a, int b)
+{
+    return a * b;
+}
+
+int divisao(int a, int b)
+{
+    
+    return a / b;
+}
+
+int main()
+{ 
+    int n1, n2;
+    int *p1, *p2;
+    
+    p1 = &n1; 
+    p2 = &n2;
+    
+    printf("Digite o primeiro valor: ");
+    scanf("%d", p1);
+    
+    printf("Digite o segundo valor: ");
+    scanf("%d", p2);
+    
+    printf("Soma dos valores: %d\n" , soma(*p1, *p2));
+    printf("Subtração dos valores: %d\n", subtracao(*p1, *p2));
+    printf("Divisão dos valores: %d\n", divisao(*p1, *p2));
+    printf("Multiplicação dos valores: %d\n", multiplicacao(*p1, *p2));
+    
+    return 0;
+}
